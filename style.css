@@ -5,6 +5,9 @@
     /* border: 1px solid black; */
 }
 
+body {
+    overflow-x: hidden;
+}
 /* ---------------------------HEADER--------------------------- */
 header {
     background-color: #121110;
@@ -64,6 +67,7 @@ header {
     color: #968350;
 }
 
+
 /* Cuando el scroll baje se va a modificar el logotipo por un logo más pequeño ubicandose en el lado izquierdo y el navbar al derecho */
 
 /* --------CARROUSEL------- */
@@ -74,24 +78,55 @@ header {
     z-index: 1000;
 }
 
-.carrousel__img1 {
+.slider-screen {
     width: 100%;
     height: 100%;
 }
 
+.slider-screen img {
+    height: 47rem;
+}
+
+.slider-izquierdo, .slider-derecho {
+    width: 5%;
+    cursor: pointer;
+}
+
+.slider-izquierdo {
+    position: absolute;
+    top: 20rem;
+}
+
+.slider-derecho {
+    position: absolute;
+    top: 20rem;
+    left: 90rem;
+}
+
+.slider-izquierdo img, .slider-derecho img {
+    width: 100%;
+}
+
+.slider-screen img {
+    width: 100%;
+}
+
+
 /* ---------------------------MAIN-INDEX-------------------------- */
 /* -----------DIVISOR------------- */
+
+
 .hr__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 30px;
+    margin: 5rem 3rem;
 }
 
 .hr__container .divisor {
     flex-grow: 1;
     border: none;
-    border-top: 2px solid #D5B812;
+    border-top: 2px solid #D5B812; 
     border-radius: 10px;
 }
 
