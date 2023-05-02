@@ -43,3 +43,5 @@ SliderIzquierda.addEventListener('click', function(){
     moverIzquierda();
     Intervalo = setInterval(moverDerecha, 3000);
 })
+
+
