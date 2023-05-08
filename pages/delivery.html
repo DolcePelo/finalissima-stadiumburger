@@ -26,37 +26,57 @@
             <hr>
         </header>
         <main>
-            <h1>DELIVERY & TAKE AWAY</h1>
-        <article class="takeaway__container">
-            <section>
-            <h2>TAKE AWAY</h2><h3>Horarios</h3>
+            <h1 class="titulo__delivery-takeaway">DELIVERY & TAKE AWAY</h1>
+
+        <div class="container__delivery-takeaway">
+
+            <h2 class="titulo__takeaway">TAKE AWAY</h2>
+
+            <h3 class="titulo__horarios">Horarios</h3>
+
             <ul class="horarios">
-                <li>Lunes a Viernes</li>
-                <li>Sabados y Domingos</li>
+                <li class="trigger">
+                    <a class="nav__link">Lunes a Viernes</a>
+                    <ul class="horarios__submenu">
+                        <li>18 hs a 02 hs</li>
+                    </ul>
+                </li>
+                
+                <li class="trigger">
+                    <a class="nav__link">Sabados y Domingos</a>
+                    <ul class="horarios__submenu">
+                        <li>18 hs a 03:30 hs</li>
+                    </ul>
+                </li>
             </ul>
-            <h2>Ordena el Take Away al what's App</h2>
-            <img src="../assets/img/whatsapp.png" alt="logo de what's app">
-        </section>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.437338317708!2d-58.72774145332996!3d-34.55533612015206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbda6990007db%3A0x600454389e2a89ad!2sMu%C3%B1iz%2C%20Buenos%20Aires%20Province%2C%20Argentina!5e0!3m2!1sen!2scl!4v1681360087174!5m2!1sen!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </article>
-    <article class="delivery__container">
-        <section>
+
+            <h2 class="titulo__whatsapp">Ordena el Take Away al what's App</h2>
+
+            <img src="../assets/img/whatsapp.png" alt="logo de what's app" class="logo__whatsapp">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.437338317708!2d-58.72774145332996!3d-34.55533612015206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbda6990007db%3A0x600454389e2a89ad!2sMu%C3%B1iz%2C%20Buenos%20Aires%20Province%2C%20Argentina!5e0!3m2!1sen!2scl!4v1681360087174!5m2!1sen!2scl" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+
+
+
+        <section class="container__pedidosya">
             <div class="pedidosya">
                 <img src="" alt="">
                 <h2>Pedidos Ya</h2>
             </div>
             <img src="" alt="">
         </section>
-        <section>
+
+        <section class="container__rappi">
                 <div class="rappi">
                     <img src="" alt="">
                     <h2>Rappi</h2>
                 </div>
                 <img src="" alt="">
             </section>
-        </article>
+
+</div>
+
+
     </main>
     <footer>
         <p class="copyright">&copy; Copyright</p>
@@ -73,7 +93,6 @@
                 <li class="footer__link"><a href="">Empleos</a></li>
             </ul>
         </div>
-        <a href=""><img src="../assets/img/whatsapp.png" alt="logo de whatsapp" class="whatsapp"></a>
 
         <div class="mobile__footer">
             <ul class="mobile__footer--navbar"> 

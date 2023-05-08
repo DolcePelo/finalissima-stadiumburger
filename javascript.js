@@ -45,3 +45,23 @@ SliderIzquierda.addEventListener('click', function(){
 })
 
 
+// --------------------------------MENU---------------------------------------------//
+
+// let botonComida = document.getElementById('boton__comida');
+// let botonBebida = document.getElementById('boton__bebida');
+
+// let menuComida = document.getElementById('menu__comida');
+// let menuBebida = document.getElementById('menu__bebida');
+
+// botonComida.addEventListener('click', mostrarComida);
+// botonBebida.addEventListener('click', mostrarBebida);
+
+// function mostrarComida (){
+//     menuComida.style.display = 'block';
+//     menuBebida.style.display = 'none';
+// }
+
+// function mostrarBebida (){
+//     menuComida.style.display = 'none';
+//     menuBebida.style.display = 'block';
+// }
