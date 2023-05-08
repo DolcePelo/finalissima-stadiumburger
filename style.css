@@ -585,6 +585,7 @@ footer {
 .nav__link {
     font-family: 'Raleway';
     font-weight: 500;
+    text-decoration:underline #D5B812; 
 }
 
 .horarios__submenu {
@@ -610,4 +611,60 @@ footer {
     margin: 1rem 0;
 }
 
+/* ----submenu cierre---- */
 
+.container__pedidosya, .container__rappi {
+    margin: 4rem;
+}
+
+.moto__delivery {
+    width: 4rem;
+    height: 4rem;
+    align-self: center;
+}
+
+.pedidosya, .rappi {
+    display: flex;
+    justify-content: center;
+}
+
+.pedidosya h2, .rappi h2 {
+    align-self: center;
+    padding-left: 2rem;
+}
+
+.logo__pedidosya {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+.logo__rappi {
+    width: 14rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+/* 
+==========================================    DELIVERY      ========================================== 
+========================================== MEDIA QUERIES ========================================== 
+==========================================    DELIVERY      ========================================== 
+*/
+
+@media screen and (max-width: 1000px) {
+
+    .container__delivery-takeaway {
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min;
+    grid-template-areas: 
+    "mapa mapa           mapa"
+    " ... tituloTakeAway  ..."
+    " ... horarios        ..."
+    " ... tituloWhatsapp  ..."
+    " ... whatsapp        ..."
+    " ... pedidosya       ..."
+    " ... rappi           ..."
+    ;
+    }
+
+
+}
