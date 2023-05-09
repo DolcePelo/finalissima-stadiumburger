@@ -1,8 +1,8 @@
 
 var imagenes = [
-                "/assets/img/group-friends-watching-sport-together-bar.jpg",
-                "/assets/img/two-happy-female-friends-toasting-glass-cocktail.jpg",
-                "/assets/img/sport-fans-cheering-bar-pub-drinking-beer-while-watching-sport-competition.jpg"
+                "./assets/img/group-friends-watching-sport-together-bar.jpg",
+                "./assets/img/two-happy-female-friends-toasting-glass-cocktail.jpg",
+                "./assets/img/sport-fans-cheering-bar-pub-drinking-beer-while-watching-sport-competition.jpg"
                 ];
 
 document.Imagen.src = imagenes[0];
