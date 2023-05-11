@@ -1,0 +1,57 @@
+body {
+    overflow-x: hidden;
+}
+
+.info1__container, .info2__container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.info__imagen, .info__imagen__derecha {
+    width: 45%;
+    height: 28.44rem;
+    transition: transform 0.5s ease;
+}
+
+.info__imagen:hover {
+    transform: rotate(10deg) translateX(-10px) translateY(-10px);
+}
+
+.info__imagen__derecha:hover {
+    transform: rotate(-10deg) translateX(-10px) translateY(-10px);
+}
+
+.info__hrvertical {
+    border: 1.5px solid #D5B812;
+    height: 25rem;
+    width: 0;
+    margin: 30px 100px;
+}
+
+.info1__texto {
+    padding-right: 6rem;
+    
+}
+
+.texto__titulo {
+    font-family: 'Raleway';
+    font-weight: 500;   
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.texto__parrafo {
+    font-family: 'Raleway';
+    font-weight: 500;   
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.info2__container{
+    flex-direction: row-reverse;
+}
+
+.info2__texto {
+    padding-left: 6rem;
+}

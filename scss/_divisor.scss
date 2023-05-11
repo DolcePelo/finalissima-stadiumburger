@@ -1,0 +1,22 @@
+.hr__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 3rem;
+}
+
+.hr__container .divisor {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid #D5B812; 
+    border-radius: 10px;
+}
+
+.imagen {
+    width: 18.75rem;
+    height: 14.75rem;
+}
+
+.divisor__sections {
+    display: none;
+}

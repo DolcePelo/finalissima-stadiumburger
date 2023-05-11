@@ -1,0 +1,150 @@
+@media screen and (max-width: 1200px) {
+    .slider-derecho {
+    left: 70rem;
+    }
+
+    .info__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__hrvertical{
+        display: none;
+    }
+
+    .info1__texto , .info2__texto{
+        padding: 0 12rem;
+    }
+
+    .texto__parrafo{
+        text-align: center;
+    }
+    
+    .divisor__sections {
+        display: block;
+        border: 2px solid #D5B812;
+        margin: 2rem 8rem;
+        border-radius: 10px;
+    }
+
+    .whatsapp {
+        top: 33rem;
+        left: 67rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+.logotipo {
+    width: 22rem;
+    height: 12rem;
+}
+
+.navbar__link a {
+    font-size: 1.2rem;
+}
+
+.slider-screen img {
+    height: 40rem;
+}
+
+.slider-derecho {
+    left: 45rem;
+}
+
+.info__imagen, .info__imagen__derecha {
+    width: 70%;
+}
+
+.info1__texto , .info2__texto{
+    padding: 0 7rem;
+}
+
+.whatsapp {
+    top: 28rem;
+    left: 43rem;
+}
+
+}
+
+@media screen and (max-width: 480px){
+.logotipo {
+    width: 20rem;
+    height: 10rem;
+}
+
+.navbar__link a {
+    font-size: 1rem;
+}
+
+.slider-screen img {
+    height: 30rem;
+}
+
+.slider-izquierdo {
+    top: 10rem;
+}
+
+.slider-derecho {
+    top: 10rem;
+    left: 28rem;
+}
+
+
+.info__imagen, .info__imagen__derecha {
+    width: 100%;
+}
+
+.info1__texto , .info2__texto{
+    padding: 0 3rem;
+}
+
+.divisor__sections {
+    margin: 2rem 2rem;
+}
+
+.copyright {
+    display: none;
+}
+
+.social {
+    display: none;
+}
+
+.footer__navbar {
+    display: none;
+}
+
+footer {
+    height: 9rem;
+}
+.mobile__footer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}    
+
+.mobile__footer--navbar {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile__footer--navbar a {
+    text-decoration: none;
+    color: #D5B812;
+    font-size: 1.2rem;
+    font-family: 'Raleway';
+    font-weight: 500;   
+    border: 2px solid #D5B812;
+    border-radius: 2px;
+    padding: 4px 4px 0 4px;
+}
+
+.mobile__footer--item:active {
+    box-shadow: 4px 4px 5px #D5B812;
+}
+
+
+}

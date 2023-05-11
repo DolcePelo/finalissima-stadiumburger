@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+
+@import '_header.scss';
+
+@import '_carrousel.scss';
+
+@import '_divisor.scss';
+
+@import '_contenidoppal.scss';
+
+@import '_footer.scss';
+
+@import '_whatsapp.scss';
+
+@import '_responsive.scss';
+
+
+/* ----------------------------------MENU------------------------------------------ */
+
+.menu__titulo { 
+    text-align: center;
+    margin: 4rem 0 1rem 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.menu__subtitulo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D5B812;
+}
+
+.menu__navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.menu__navbar a {
+    text-decoration: underline;
+    letter-spacing: 6px;
+    text-underline-offset: .5rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+    margin: 1.3rem 1.3rem;
+    cursor: pointer;
+}
+
+.menu__navbar a:hover {
+    color: #D5B812;
+}
+
+.container__columnas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.columna__izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna__derecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    list-style-type: none;
+    text-align: center;
+    font-style: 'Raleway';
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.bloque__comida { 
+    margin-bottom: 2rem;
+}
+
+/* 
+==========================================     MENU      ========================================== 
+========================================== MEDIA QUERIES ========================================== 
+==========================================     MENU      ========================================== 
+*/
+
+
+@media screen and (max-width: 480px) {
+    .container__columnas {
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------------------------DELIVERY--------------------------------------- */
+
+.titulo__delivery-takeaway {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.container__delivery-takeaway {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "tituloTakeAway mapa mapa"
+    "tituloHorarios mapa mapa"
+    "horarios       mapa mapa"
+    "tituloWhatsapp mapa mapa"
+    "whatsapp       mapa mapa"
+    "pedidosya      rappi ..."
+    ;
+    font-family: 'Raleway';
+    width: 100%;
+}
+
+.titulo__takeaway {
+    grid-area: tituloTakeAway;
+    text-align: center;
+}
+
+.titulo__horarios {
+    grid-area: tituloHorarios;
+    margin-left: 1rem;
+    height: 0;
+}
+
+.horarios {
+    grid-area: horarios;
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.titulo__whatsapp {
+    grid-area: tituloWhatsapp;
+    text-align: center;
+}
+
+.logo__whatsapp {
+    grid-area: whatsapp;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.container__pedidosya {
+    grid-area: pedidosya;
+}
+
+.container__rappi {
+    grid-area: rappi;
+}
+
+
+/* ----submenu---- */
+
+.nav__link {
+    font-family: 'Raleway';
+    font-weight: 500;
+    text-decoration:underline #D5B812; 
+}
+
+.horarios__submenu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    left: 13rem;
+    top: 35rem;
+    border-radius: 15px;
+    box-shadow: 5px 10px 15px #888888;
+    padding: 10px;
+}
+
+.trigger {
+    padding: .2rem 0;
+    cursor: pointer;
+}
+.trigger:hover > .horarios__submenu {
+    display: block;
+}
+
+.horarios__submenu li {
+    margin: 1rem 0;
+}
+
+/* ----submenu cierre---- */
+
+.container__pedidosya, .container__rappi {
+    margin: 4rem;
+}
+
+.moto__delivery {
+    width: 4rem;
+    height: 4rem;
+    align-self: center;
+}
+
+.pedidosya, .rappi {
+    display: flex;
+    justify-content: center;
+}
+
+.pedidosya h2, .rappi h2 {
+    align-self: center;
+    padding-left: 2rem;
+}
+
+.logo__pedidosya {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+.logo__rappi {
+    width: 14rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+/* 
+==========================================    DELIVERY      ========================================== 
+========================================== MEDIA QUERIES ========================================== 
+==========================================    DELIVERY      ========================================== 
+*/
+
+@media screen and (max-width: 1000px) {
+
+    .container__delivery-takeaway {
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "mapa mapa           mapa"
+    " ... tituloTakeAway  ..."
+    " ... horarios        ..."
+    " ... tituloWhatsapp  ..."
+    " ... whatsapp        ..."
+    " ... pedidosya       ..."
+    " ... rappi           ..."
+    ;
+    }
+
+
+}
