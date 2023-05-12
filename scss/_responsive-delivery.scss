@@ -1,0 +1,98 @@
+
+@media screen and (max-width: 1000px) {
+
+    .container__delivery-takeaway {
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "mapa mapa           mapa"
+    " ... tituloTakeAway  ..."
+    " ... tituloHorarios  ..."
+    " ... horarios        ..."
+    " ... tituloWhatsapp  ..."
+    " ... whatsapp        ..."
+    " ... pedidosya       ..."
+    " ... rappi           ..."
+    ;
+    }
+    .mapa {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .titulo__takeaway {
+        margin: 1rem auto;
+    }
+    .titulo__horarios {
+        margin: 1rem auto;
+    }
+    .horarios {
+        margin: 2rem -1rem;
+    }
+    .titulo__whatsapp {
+        margin: 2rem auto;
+    }
+    .logo__whatsapp {
+        margin: 1rem auto;
+    }
+
+    .horarios__submenu {
+        display: block;
+        top: 70rem;
+        left: 33rem;
+        box-shadow: none;
+    }
+
+    .lunavier {
+        top: 68.8rem;
+    }
+    .sabydom {
+        top: 70.3rem;
+    }
+
+    .container__pedidosya, .container__rappi {
+        margin: 0;
+    }
+    .rappi {
+        margin-left: 2rem;
+    }
+
+    .logo__rappi {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__delivery-takeaway {
+        grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
+        grid-template-areas: 
+        "mapa mapa           mapa"
+        "tituloTakeAway ...   ..."
+        "tituloHorarios ...   ..."
+        "horarios       ...   ..."
+        "... tituloWhatsapp    ..."
+        "...   whatsapp       ..."
+        "... pedidosya         ..."
+        "... rappi             ..."
+        ;
+        }
+    .mapa {
+        width: 100%;
+        height: 30rem;
+    }
+    .titulo__horarios {
+        margin-left: 1rem;
+    }
+    .horarios {
+        margin-left: 1rem;
+    }
+    
+    .horarios__submenu {
+        left: 13rem;
+    }
+
+    .lunavier {
+        top: 66.2rem;
+    }
+    .sabydom {
+        top: 68rem;
+    }
+}

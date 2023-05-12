@@ -356,17 +356,19 @@ footer {
     font-size: 1rem;
   }
   .slider-screen img {
-    height: 30rem;
+    height: 25rem;
   }
   .slider-izquierdo {
     top: 10rem;
+    left: 2rem;
   }
   .slider-derecho {
     top: 10rem;
-    left: 28rem;
+    left: 25rem;
   }
   .info__imagen, .info__imagen__derecha {
     width: 100%;
+    height: 25rem;
   }
   .info1__texto, .info2__texto {
     padding: 0 3rem;
@@ -509,11 +511,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-/* 
-==========================================     MENU      ========================================== 
-========================================== MEDIA QUERIES ========================================== 
-==========================================     MENU      ========================================== 
-*/
 @media screen and (max-width: 480px) {
   .container__columnas {
     -webkit-box-orient: vertical;
@@ -652,15 +649,77 @@ footer {
   cursor: pointer;
 }
 
-/* 
-==========================================    DELIVERY      ========================================== 
-========================================== MEDIA QUERIES ========================================== 
-==========================================    DELIVERY      ========================================== 
-*/
 @media screen and (max-width: 1000px) {
   .container__delivery-takeaway {
-    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
-    grid-template-areas: "mapa mapa           mapa" " ... tituloTakeAway  ..." " ... horarios        ..." " ... tituloWhatsapp  ..." " ... whatsapp        ..." " ... pedidosya       ..." " ... rappi           ...";
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "mapa mapa           mapa" " ... tituloTakeAway  ..." " ... tituloHorarios  ..." " ... horarios        ..." " ... tituloWhatsapp  ..." " ... whatsapp        ..." " ... pedidosya       ..." " ... rappi           ...";
+  }
+  .mapa {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .titulo__takeaway {
+    margin: 1rem auto;
+  }
+  .titulo__horarios {
+    margin: 1rem auto;
+  }
+  .horarios {
+    margin: 2rem -1rem;
+  }
+  .titulo__whatsapp {
+    margin: 2rem auto;
+  }
+  .logo__whatsapp {
+    margin: 1rem auto;
+  }
+  .horarios__submenu {
+    display: block;
+    top: 70rem;
+    left: 33rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .lunavier {
+    top: 68.8rem;
+  }
+  .sabydom {
+    top: 70.3rem;
+  }
+  .container__pedidosya, .container__rappi {
+    margin: 0;
+  }
+  .rappi {
+    margin-left: 2rem;
+  }
+  .logo__rappi {
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__delivery-takeaway {
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "mapa mapa           mapa" "tituloTakeAway ...   ..." "tituloHorarios ...   ..." "horarios       ...   ..." "... tituloWhatsapp    ..." "...   whatsapp       ..." "... pedidosya         ..." "... rappi             ...";
+  }
+  .mapa {
+    width: 100%;
+    height: 30rem;
+  }
+  .titulo__horarios {
+    margin-left: 1rem;
+  }
+  .horarios {
+    margin-left: 1rem;
+  }
+  .horarios__submenu {
+    left: 13rem;
+  }
+  .lunavier {
+    top: 66.2rem;
+  }
+  .sabydom {
+    top: 68rem;
   }
 }
