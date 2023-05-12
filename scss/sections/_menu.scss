@@ -1,0 +1,66 @@
+.menu__titulo { 
+    text-align: center;
+    margin: 4rem 0 1rem 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.menu__subtitulo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D5B812;
+}
+
+.menu__navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.menu__navbar a {
+    text-decoration: underline;
+    letter-spacing: 6px;
+    text-underline-offset: .5rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+    margin: 1.3rem 1.3rem;
+    cursor: pointer;
+}
+
+.menu__navbar a:hover {
+    color: #D5B812;
+}
+
+.container__columnas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.columna__izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna__derecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    list-style-type: none;
+    text-align: center;
+    font-style: 'Raleway';
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.bloque__comida { 
+    margin-bottom: 2rem;
+}
