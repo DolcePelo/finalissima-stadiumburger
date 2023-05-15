@@ -145,8 +145,19 @@ header .cerrar img {
     padding: 0 3rem;
 }
 
+.imagen {
+    width: 10rem;
+    height: 8rem;
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+
+.hr__container {
+    margin: 3rem 1rem;
+}
+
 .divisor__sections {
-    margin: 2rem 2rem;
+    margin: 2rem;
 }
 
 .copyright {
@@ -194,9 +205,9 @@ footer {
     box-shadow: 4px 4px 5px #D5B812;
 }
 
-.whatsapp {
-    top: 16rem;
-    left: 21.5rem;
-}
+// .whatsapp {
+//     top: 16rem;
+//     left: 21.5rem;
+// }
 
 }

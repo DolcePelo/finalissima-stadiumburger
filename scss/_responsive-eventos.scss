@@ -1,0 +1,61 @@
+@media screen and (max-width: 780px) {
+    .eventos-banner {
+        height: 40rem;
+    }
+
+    .imagen-vip {
+        height: 14rem;
+    }
+
+    .salas__container {
+        flex-direction: column;
+    }
+
+    .vip__container {
+        margin-bottom: 3rem;
+        padding: 0 5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    .semivip__container {
+        margin-bottom: 3rem;
+        padding: 0 5rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .eventos-banner {
+        position: relative;
+        height: 22rem;
+        z-index: 1000;
+    }
+
+    .imagen-vip {
+        width: 10rem;
+        height: 8rem;
+        margin-top: -1rem;
+        margin-bottom: 0;
+    }
+
+    .vip__container {
+        padding: 0;
+    }
+
+    .semivip__container {
+        padding: 0;
+    }
+
+    .vip__container h2 {
+        margin: 1rem 0;
+    }
+
+    .semivip__container h2 {
+        margin: 1rem 0;
+    }
+
+}

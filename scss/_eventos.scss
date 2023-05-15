@@ -1,10 +1,60 @@
+body {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 .eventos-banner {
     width: 100%;
     height: 47rem;
+    position: relative;
+    z-index: 1000;
 }
 
 .imagen-vip {
     width: 16rem;
     padding: 0 2rem;
     margin-bottom: 3rem;
+    margin-top: -2rem;
 }
+
+.salas__container {
+    display: flex;
+}
+
+.vip__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.vip__container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.semivip__container {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.semivip__container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vip__container img, .semivip__container img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.whatsapp {
+    top: 38rem;
+    left: 90rem;
+}
+
