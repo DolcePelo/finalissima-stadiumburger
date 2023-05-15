@@ -19,6 +19,16 @@ header .logotipo {
   display: block;
   margin: auto;
 }
+header .hamburguesa {
+  display: none;
+}
+header .cerrar {
+  display: none;
+  position: relative;
+  width: 3rem;
+  height: 1rem;
+  z-index: 1020;
+}
 header .navbar__container {
   width: 100%;
   text-align: center;
@@ -348,9 +358,59 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  .logotipo {
-    width: 20rem;
+  header .logotipo {
+    width: 15rem;
     height: 10rem;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hamburguesa {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #121110;
+    border: 0;
+  }
+  header .hamburguesa img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .navbar__container {
+    display: none;
+  }
+  .navbar {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 1010;
+    background-color: #121110;
+    top: 0;
+  }
+  header .cerrar {
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    background-color: #121110;
+    border: 0;
+  }
+  header .cerrar img {
+    height: 2rem;
+    width: 2rem;
   }
   .navbar__link a {
     font-size: 1rem;
@@ -360,11 +420,11 @@ footer {
   }
   .slider-izquierdo {
     top: 10rem;
-    left: 2rem;
+    left: 0.2rem;
   }
   .slider-derecho {
     top: 10rem;
-    left: 25rem;
+    left: 24rem;
   }
   .info__imagen, .info__imagen__derecha {
     width: 100%;
@@ -423,6 +483,10 @@ footer {
   .mobile__footer--item:active {
     -webkit-box-shadow: 4px 4px 5px #D5B812;
             box-shadow: 4px 4px 5px #D5B812;
+  }
+  .whatsapp {
+    top: 29rem;
+    left: 21.5rem;
   }
 }
 /* ----------------------------------MENU------------------------------------------ */
@@ -717,9 +781,9 @@ footer {
     left: 13rem;
   }
   .lunavier {
-    top: 66.2rem;
+    top: 55rem;
   }
   .sabydom {
-    top: 68rem;
+    top: 56.5rem;
   }
 }

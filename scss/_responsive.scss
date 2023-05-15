@@ -66,9 +66,55 @@
 }
 
 @media screen and (max-width: 480px){
-.logotipo {
-    width: 20rem;
+header .logotipo {
+    width: 15rem;
     height: 10rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .hamburguesa {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #121110;
+    border: 0;
+}
+
+header .hamburguesa img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.navbar__container {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1010;
+    background-color: #121110;
+    top: 0;
+}
+
+header .cerrar {
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    background-color: #121110;
+    border: 0;
+}
+
+header .cerrar img {
+    height: 2rem;
+    width: 2rem;
 }
 
 .navbar__link a {
@@ -81,12 +127,12 @@
 
 .slider-izquierdo {
     top: 10rem;
-    left: 2rem;
+    left: 0.2rem;
 }
 
 .slider-derecho {
     top: 10rem;
-    left: 25rem;
+    left: 24rem;
 }
 
 
@@ -148,5 +194,9 @@ footer {
     box-shadow: 4px 4px 5px #D5B812;
 }
 
+.whatsapp {
+    top: 29rem;
+    left: 21.5rem;
+}
 
 }
