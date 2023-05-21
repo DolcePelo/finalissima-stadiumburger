@@ -84,6 +84,8 @@ header .navbar__container .navbar .navbar__link:hover {
 
 .slider-screen img {
   height: 47rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-izquierdo, .slider-derecho {
@@ -160,6 +162,8 @@ body {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .info__imagen:hover {
@@ -803,6 +807,8 @@ body {
   height: 47rem;
   position: relative;
   z-index: 1000;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .imagen-vip {
