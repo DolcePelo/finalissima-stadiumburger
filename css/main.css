@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* border: 1px solid black; */
 }
 
 header {
@@ -878,8 +877,12 @@ body {
   height: 25rem;
 }
 
+.vip__container h2, .semivip__container h2 {
+  margin: 1rem 0;
+}
+
 .whatsapp {
-  top: 38rem;
+  top: 42rem;
   left: 90rem;
 }
 
@@ -928,11 +931,5 @@ body {
   }
   .semivip__container {
     padding: 0;
-  }
-  .vip__container h2 {
-    margin: 1rem 0;
-  }
-  .semivip__container h2 {
-    margin: 1rem 0;
   }
 }
