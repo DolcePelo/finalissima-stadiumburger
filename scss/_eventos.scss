@@ -52,6 +52,7 @@ body {
 .vip__container img, .semivip__container img {
     width: 25rem;
     height: 25rem;
+    object-fit: cover;
 }
 
 .vip__container h2, .semivip__container h2 {

@@ -1,0 +1,46 @@
+.promociones__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen__promociones {
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 8px 4px #d3d3d3d1;
+    border-radius: 1rem;
+    font-family: 'Raleway';
+    margin: 3rem;
+}
+
+.card__titulo {
+    font-size: 1.5rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.card__descripcion {
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.card__pie {
+    background-color: #D5B812;
+    border-radius:0 0 1rem 1rem;
+    padding: .7rem;
+    text-align:center;
+}
+
+.promociones__titulo {
+    margin: .3rem;
+    text-align: center;
+}
