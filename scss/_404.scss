@@ -1,0 +1,71 @@
+.error404__main {
+    display: flex;
+}
+
+.error404__container {
+    width:  60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error404__imagen {
+    width: 60rem;
+    height: 50rem;
+    object-fit: cover;
+}
+
+.error404__titulo {
+    text-align: center;
+    font-size: 8rem;
+    color: $color-quaternary;
+    margin-top: 8rem;
+}
+
+
+.error404__descripcion {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem;
+}
+
+.error404__boton {
+    width: 15rem;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.error404__boton:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.error404__boton:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+.error404__boton a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}

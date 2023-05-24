@@ -5,6 +5,8 @@
           box-sizing: border-box;
 }
 
+/* ----------------------------------VARIABLES-------------------------------------- */
+/* ------------------------------------MAIN------------------------------------------ */
 header {
   background-color: #121110;
   border-bottom: 4px solid #D5B812;
@@ -997,4 +999,90 @@ body {
 .promociones__titulo {
   margin: 0.3rem;
   text-align: center;
+}
+
+/* ----------------------------------ERROR 404-------------------------------------- */
+.error404__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error404__container {
+  width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error404__imagen {
+  width: 60rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.error404__titulo {
+  text-align: center;
+  font-size: 8rem;
+  color: #D01110;
+  margin-top: 8rem;
+}
+
+.error404__descripcion {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 3rem;
+}
+
+.error404__boton {
+  width: 15rem;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.error404__boton:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.error404__boton:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.error404__boton a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
