@@ -43,19 +43,24 @@
             </ul>
     </header>
     <main>
-        <h1>RESERVA</h1>
+        <div class="form__container">
+        <h1 class="form__titulo">RESERVA</h1>
         <form action="" method="post">
             <label for="numero_personas">Número de personas</label>
-            <input type="number" name="numero_personas" id="" required><br>
+            <input type="number" name="numero_personas" min="1" max="10" required><br>
             <label for="fecha">Fecha</label>
             <input type="date" name="fecha" id=""><br>
             <label for="hora">Hora</label>
-            <input type="time" name="hora" id=""><br>
+            <input type="time" name="hora" min="18:00" max="00:00"><br>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre"><br>
-
-            <input type="submit" value="Reservar Mesa">
+            <input type="text" name="nombre" required><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+            <button href="javascript:;" class="code_view actionBtn18">
+	            <span class="lb">Reservar Mesa</span>
+            </button>
         </form>
+        </div>
     </main>
     <footer>
         <p class="copyright">&copy; Copyright</p>

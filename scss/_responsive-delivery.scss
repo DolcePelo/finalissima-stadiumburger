@@ -68,7 +68,7 @@
         "tituloTakeAway ...   ..."
         "tituloHorarios ...   ..."
         "horarios       ...   ..."
-        "... tituloWhatsapp    ..."
+        "tituloWhatsapp tituloWhatsapp   tituloWhatsapp"
         "...   whatsapp       ..."
         "... pedidosya         ..."
         "... rappi             ..."
@@ -96,5 +96,7 @@
         top: 56.5rem;
     }
 
-    
+    .titulo__whatsapp{
+        padding: 0 2rem;
+    }
 }

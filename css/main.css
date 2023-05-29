@@ -192,9 +192,9 @@ body {
 .texto__titulo {
   font-family: "Raleway";
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .texto__parrafo {
@@ -775,7 +775,7 @@ footer {
   .container__delivery-takeaway {
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
-    grid-template-areas: "mapa mapa           mapa" "tituloTakeAway ...   ..." "tituloHorarios ...   ..." "horarios       ...   ..." "... tituloWhatsapp    ..." "...   whatsapp       ..." "... pedidosya         ..." "... rappi             ...";
+    grid-template-areas: "mapa mapa           mapa" "tituloTakeAway ...   ..." "tituloHorarios ...   ..." "horarios       ...   ..." "tituloWhatsapp tituloWhatsapp   tituloWhatsapp" "...   whatsapp       ..." "... pedidosya         ..." "... rappi             ...";
   }
   .mapa {
     width: 100%;
@@ -795,6 +795,9 @@ footer {
   }
   .sabydom {
     top: 56.5rem;
+  }
+  .titulo__whatsapp {
+    padding: 0 2rem;
   }
 }
 /* ----------------------------------EVENTOS--------------------------------------- */
@@ -1085,4 +1088,118 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+/* ----------------------------------RESERVAS--------------------------------------- */
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__titulo {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+form input {
+  width: 20%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #D5B812;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Raleway";
+}
+
+.actionBtn18 {
+  display: inline-block;
+  position: relative;
+  padding: 2rem 0;
+  margin: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.actionBtn18:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -4px;
+  background: #D5B812;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: left 0.3s ease-out;
+  -webkit-transition: left 0.3s ease-out;
+  -moz-transition: left 0.3s ease-out;
+}
+
+.actionBtn18:hover:after {
+  left: 100%;
+}
+
+.actionBtn18 .lb {
+  position: relative;
+  display: block;
+  z-index: 1;
+  padding-left: 17px;
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: padding 0.3s ease-out;
+  -webkit-transition: padding 0.3s ease-out;
+  -moz-transition: padding 0.3s ease-out;
+}
+
+.actionBtn18:hover .lb {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+@media screen and (max-width: 780px) {
+  form input {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  form input {
+    width: 50%;
+  }
 }
